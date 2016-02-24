@@ -1,7 +1,9 @@
 # react-clickoutside-component
 A high-order Component wrapper to provide click outside functionality to the
 wrapped components
+
 [![npm version](https://badge.fury.io/js/react-clickoutside-component.svg)](https://badge.fury.io/js/react-clickoutside-component)
+
 [![forthebadge](http://forthebadge.com/images/badges/gluten-free.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 

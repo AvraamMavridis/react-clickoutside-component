@@ -2,10 +2,6 @@ import React                  from 'react';
 import ReactDOM               from 'react-dom';
 import ClickOutside           from 'react-clickoutside-component';
 
-console.log( ClickOutside );
-
-console.log( document.getElementById( 'app' ) )
-
 class App extends React.Component{
 
     constructor()

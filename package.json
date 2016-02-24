@@ -1,6 +1,6 @@
 {
   "name": "react-clickoutside-component",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "homepage": "https://github.com/AvraamMavridis/react-clickoutside-component",
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
     "prepublish": "npm run compile",
     "watch": "npm-scripts-watcher"
   },
+  "main" : "./lib/index.js",
   "watch": {
     "src/**/*.js": [
       "compile"

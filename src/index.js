@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
-import isDescendant from './isDescendant';
 
 const clickOutsideEvents = [ 'mousedown', 'touchstart' ];
+const isDescendant = ( el, target ) => target !== null ? el === target || isDescendant( el, target.parentNode ) : false;
 
 export default class ClickOutside extends Component {
 
@@ -15,7 +15,7 @@ export default class ClickOutside extends Component {
       componentDidMount()
       {
             if ( !this.props.onClickOutside ) return;
-            clickAwayEvents.forEach( e => document.addEventListener( e, this.props.onClickOutside ) )
+            clickOutsideEvents.forEach( e => document.addEventListener( e, this.handleClickOutside ) )
       }
 
       /**
@@ -26,11 +26,11 @@ export default class ClickOutside extends Component {
       {
             if ( prevProps.onClickOutside !== this.props.onClickOutside )
             {
-                  clickAwayEvents.forEach( e => document.removeEventListener( e, this.props.onClickOutside ) );
+                  clickOutsideEvents.forEach( e => document.removeEventListener( e, this.handleClickOutside ) );
 
                   if ( this.props.onClickOutside )
                   {
-                      clickAwayEvents.forEach( e => document.addEventListener( e, this.props.onClickOutside ) )
+                      clickOutsideEvents.forEach( e => document.addEventListener( e, this.handleClickOutside ) )
                   }
             }
       }
@@ -40,20 +40,20 @@ export default class ClickOutside extends Component {
        */
       componentWillUnmount()
       {
-           clickAwayEvents.forEach( e => document.removeEventListener( e, this.props.onClickAway ) );
+           clickOutsideEvents.forEach( e => document.removeEventListener( e, this.handleClickOutside ) );
       }
 
       /**
        * Call callback on ClickAway and pass the event
        * @param  event
        */
-      handleClickAway = ( e ) =>
+      handleClickOutside = ( e ) =>
       {
             const el = ReactDOM.findDOMNode( this );
 
             if ( document.documentElement.contains( e.target ) && !isDescendant( el, e.target ) )
             {
-                this.props.onClickAway( e );
+                this.props.onClickOutside( e );
             }
       };
 

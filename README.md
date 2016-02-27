@@ -62,7 +62,11 @@ ReactDOM.render( <App />, document.getElementById( 'app' ) );
 
 ###Changelog:
 
+24-02-2016 Release version 1.0.4
+- Move React depedency to [peerDepedencies](https://github.com/AvraamMavridis/react-clickoutside-component/commit/e5f6dea3ff3a23670d4c89b9b7faff6030a63cda)
+
 24-02-2016 Release version 1.0.3
+- First release
 
 ### Contribute
 

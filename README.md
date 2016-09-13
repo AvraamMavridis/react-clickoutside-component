@@ -76,6 +76,3 @@ Any pull-request is more than welcome :boom: :smile:
 
 MIT
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/AvraamMavridis/react-clickoutside-component/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

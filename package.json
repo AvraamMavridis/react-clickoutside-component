@@ -1,6 +1,5 @@
 {
   "name": "react-clickoutside-component",
-  "version": "1.0.4",
   "homepage": "https://github.com/AvraamMavridis/react-clickoutside-component",
   "repository": {
     "type": "git",
@@ -12,7 +11,8 @@
     "test": "mocha --compilers js:babel-register",
     "compile": "babel --presets es2015,stage-0,react -d lib/ src/",
     "prepublish": "npm run compile",
-    "watch": "npm-scripts-watcher"
+    "watch": "npm-scripts-watcher",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "main": "./lib/index.js",
   "watch": {
@@ -45,8 +45,9 @@
     "chai": "^3.5.0",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.0.0",
-    "eslint-config-google": "^0.4.0",
+    "eslint-config-google": "^0.6.0",
     "eslint-plugin-react": "^6.2.0",
-    "mocha": "^2.1.0"
+    "mocha": "^3.0.2",
+    "semantic-release": "^4.3.5"
   }
 }

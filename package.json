@@ -46,6 +46,6 @@
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.0.0",
     "eslint-plugin-react": "^6.3.0",
-    "semantic-release": "^6.3.0"
+    "semantic-release": "^6.3.5"
   }
 }

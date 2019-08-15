@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 const clickOutsideEvents = [ 'mousedown', 'touchstart' ];
 const isDescendant = ( el, target ) => target !== null ? el === target || isDescendant( el, target.parentNode ) : false;

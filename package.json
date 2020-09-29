@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/AvraamMavridis/react-clickoutside-component"
   },
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Avraam Mavridis <avr.mav@gmail.com>",
   "description": "react autocomplete component",
   "scripts": {
